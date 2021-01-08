@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
+:root{
+    --blue:/*#1569C7*/#2554C7/*#0041C2*//*#0020C2*//*#2B547E*//*#4863A0*/;
+    --red:#DC381F;
+}
+
+
 *{
   padding:0;
   margin:0;
@@ -129,7 +135,7 @@ p{
 }
 
 #header .nav-list ul li:hover a{
-    color:DarkCyan;
+    color:var(--blue);
 }
 
 
@@ -216,7 +222,8 @@ p{
 #hero h1{
   display:block;
   width:fit-content;
-  font-size:4rem;
+  font-size:7rem;
+  font-family:'Brush Script MT', Brush Script Std, cursive;
   position:relative;
   color:transparent;
   animation:text_reveal .5s ease forwards; 
@@ -238,7 +245,7 @@ p{
     left:0;
     height:100%;
     width:0%;
-    background-color:DarkCyan;
+    background-color:var(--blue);
     animation:text_reveal_box 1s ease;
     animation-delay: .3s;
 }
@@ -256,7 +263,7 @@ p{
     padding:10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid DarkCyan;
+    border: 2px solid var(--blue);
     font-size:2rem;
     text-transform:uppercase;
     letter-spacing:.1rem;
@@ -266,7 +273,7 @@ p{
 }
 .cta:hover{
     color:white;
-    background-color: DarkCyan;
+    background-color: var(--blue);
 
 }
 
@@ -277,7 +284,7 @@ p{
 }
 
 .brand h1 span{
-    color: DarkCyan;
+    color: var(--blue);
 }
 
 
@@ -288,7 +295,7 @@ p{
 #services .services{
   flex-direction:column;
   text-align:center;
-  max-width:1500px;
+  max-width:1600px;
   margin:0 auto;
   padding:100px 0;
 }
@@ -303,7 +310,7 @@ p{
     text-align: center;
 }
 .section-title span{
-    color:DarkCyan;
+    color:var(--blue);
 }
 
 #services .service-top p{
@@ -324,6 +331,7 @@ p{
 }
 
 #services .service-item{
+
     flex-basis:80%;
     display:flex;
     align-items:flex-start;
@@ -363,7 +371,7 @@ p{
 }
 
 #services .service-item h2{
-    font-size:2rem;
+    font-size:1.8rem;
     color:white;
     margin-bottom:10px;
     text-transform:uppercase;
@@ -371,13 +379,16 @@ p{
 }
 
 #services .service-item p{
+    font-size:1.5rem;
     color:white;
     text-align:left;
 }
 
+
 #services .service-item a{
-    font-size:1.3rem;
-    color:cadetblue;
+    font-size:1.8rem;
+    /*background-color: red;*/
+    color: var(--red);
 }
 
 /*End Services Section*/
@@ -531,7 +542,7 @@ p{
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid #7F38EC;
+	border: 7px solid var(--red);
 	z-index: -1;
 }
 
@@ -593,7 +604,8 @@ p{
 /*Footer*/
 #footer{
     background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
-
+/*
+    background-color:black;*/
 }
 
 #footer .footer{
@@ -675,7 +687,7 @@ p{
 }
 @keyframes text_reveal_name{
     100%{
-        color:DarkCyan;
+        color:var(--color);
         font-weight:500;
     }
 }
@@ -694,7 +706,8 @@ p{
 /* Services Section*/
 
   #services .service-bottom .service-item{
-      flex-basis:45%;
+
+     flex-basis:45%;
       margin:1.5%;
   }
 
@@ -714,7 +727,7 @@ p{
     top: 34px;
     height: 98%;
     width: 98%;
-    border: 10px solid crimson;
+    border: 10px solid var(--red);
 }
 #about .col-right {
     text-align: left;
@@ -784,6 +797,8 @@ p{
 	/* End header */
 
 	#services .service-bottom .service-item {
+        width:1000px;
+        height:500px;
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
