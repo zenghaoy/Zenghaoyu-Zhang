@@ -34,7 +34,7 @@ p{
     font-size:1.4rem;
     margin-top:5px;
     line-height:2.5rem;
-    font-weight:300px;
+    font-weight:300;
     letter-spacing:.05rem;
 
 }
@@ -62,7 +62,7 @@ p{
     justify-content:space-between;
     width:100%;
     height:100%;
-    max-width:1300px;
+    max-width:1500px;
     padding:0 10px;
 }
 
@@ -439,7 +439,7 @@ p{
 }
 
 #projects .project-info h1{
-    font-size:4rem;
+    font-size:3rem;
     font-weight:500;
     margin-bottom:10px;
 }
@@ -495,21 +495,45 @@ p{
 }
 
 #about .col-left{
-    /*width:250px;
+    width:250px;
     height:360px;
-    */
-    width:700px;
-    height:350px;
 }
 
 #about .col-right{
     width:100%;
 }
 
-#about .col-right p{
-    margin-bottom:20px;
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	margin-bottom: 10px;
 }
-
+#about .col-right p {
+	margin-bottom: 20px;
+}
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-left .about-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+#about .col-left .about-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid crimson;
+	z-index: -1;
+}
 
 /*End About Section*/
 
@@ -629,6 +653,10 @@ p{
 
 
 /*Keyframes*/
+
+
+
+
 @keyframes text_reveal_box{
     50%{
         width:100%;
@@ -648,21 +676,57 @@ p{
 @keyframes text_reveal_name{
     100%{
         color:DarkCyan;
-        font-weight:500px;
+        font-weight:500;
     }
 }
 /*End Keyframes*/
 
 
-/*Media*/
+/*Media Query For Tablet*/
 
 @media only screen and (min-width:768px){
+
+    .cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+
+/* Services Section*/
 
   #services .service-bottom .service-item{
       flex-basis:45%;
       margin:1.5%;
   }
 
+/*End Services Section*/
+
+/* About */
+#about .about {
+    flex-direction: row;
+}
+#about .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+}
+#about .about .col-left .about-img::after {
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid crimson;
+}
+#about .col-right {
+    text-align: left;
+    padding: 30px;
+}
+#about .col-right h1 {
+    text-align: left;
+}
+/* End About */
+
+
+/*contact*/
   #contact .contact{
       flex-direction:column;
       padding:100px 0;
@@ -691,7 +755,37 @@ p{
     object-fit:contain;
   }
 
-
+/*End contact*/
 
 }
-/*End Media*/
+/* Media Query For Desktop */
+@media only screen and (min-width: 1550px) {
+    
+	/* header */
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+
+	#services .service-bottom .service-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+}
+/* End  Media Query For Desktop */
