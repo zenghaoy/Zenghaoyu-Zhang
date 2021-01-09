@@ -45,6 +45,7 @@ p{
 
 }
 
+
 /*Header section*/
 
 #header{
@@ -68,7 +69,7 @@ p{
     justify-content:space-between;
     width:100%;
     height:100%;
-    max-width:1500px;
+    max-width:1300px;
     padding:0 10px;
 }
 
@@ -610,12 +611,11 @@ p{
 /*
     background-color:black;*/
 }
-
+ 
 #footer .footer{
-    min-height:200px;
+    min-height:500px;
     flex-direction:column;
-    padding-top:50px;
-    padding-bottom:10px;
+    padding:100px 20px;
 }
 
 #footer .social-icon{
@@ -629,6 +629,7 @@ p{
     margin:0 5px;
 }
 
+
 #footer .social-item img{
     filter:grayscale(1);
     transition:.3s ease filter;
@@ -638,30 +639,63 @@ p{
     filter:grayscale(0);
 }
 
+#footer h{
+    color:white;
+    font-size: 2.5rem;
+ 
+}
+
 #footer p{
     color:white;
     font-size: 1.3rem;
-    margin:40px 40px 40px 10px;
-}
 
-#footer .other{
-    height:30px;
-    width:200px;
-    margin:0 5px;
-}
-
-#footer .other h1{
-    font-size:1.5rem;
-    color:white;
 }
 
 
-#footer .other a{
+#footer .other-item{
+    display:flex;
+    margin: 0;
+    width:1000px;
+    height:auto;
+    padding-bottom:100px;
+}
 
+#footer .col-left{
+    width: 500px;
+    text-align: right;
+    padding:10px;
+}
+
+#footer .col-left h{
     text-decoration:none;
-    font-size:1.3rem;
     color:white;
+    font-size:2.5rem;
+    /*font-weight:500;
+    font-weight:bold;*/
 }
+
+#footer .col-left p{
+    text-decoration:none;
+    color:white;
+    font-size:2.5rem;
+    /*font-weight:500;
+    font-weight:bold;*/
+}
+
+#footer .col-right{
+    width:100px;
+    text-align: left;
+    padding:10px;
+}
+#footer .col-right h{
+    text-decoration:none;
+    color:white;
+    font-size:2.5rem;
+    padding:0px;
+    text-align: left;
+}
+
+
 
 
 /*End Footer*/
@@ -798,7 +832,7 @@ p{
 
 }
 /* Media Query For Desktop */
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1200px) {
     
 	/* header */
 	#header .hamburger {
