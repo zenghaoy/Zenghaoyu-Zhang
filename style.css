@@ -292,8 +292,8 @@ p{
 /*End Hero Section*/
 
 
-/*Services Section*/
-#services .services{
+/*Workterms Section*/
+#workterms .workterms{
     flex-direction:column;
     text-align:center;
     max-width:1800px;
@@ -314,7 +314,7 @@ p{
     color:var(--blue);
 }
 
-#services .service-top p{
+#workterms .service-top p{
     color:black;
     font-size:1.4rem;
     margin-top:5px;
@@ -323,7 +323,7 @@ p{
     letter-spacing:.05rem;
 }
 
-#services .service-bottom{
+#workterms .service-bottom{
     display:flex;
     align-items:center;
     justify-content:center;
@@ -331,7 +331,7 @@ p{
     margin-top:50px;
 }
 
-#services .service-item{
+#workterms .service-item{
 
     flex-basis:80%;
     display:flex;
@@ -348,7 +348,7 @@ p{
     overflow:hidden;
 }
 
-#services .service-item::after{
+#workterms .service-item::after{
     content:'';
     position:absolute;
     left:0;
@@ -359,19 +359,19 @@ p{
     opacity:.8;
     z-index:-1;
 }
-.services .service-bottom .icon{
+.workterms .service-bottom .icon{
     height:50px;
     width:50px;
     margin-bottom:10px;
 }
 
-#services .service-bottom .icon img{
+#workterms .service-bottom .icon img{
     height:100%;
     width:100%;
     object-fit:cover;
 }
 
-#services .service-item h2{
+#workterms .service-item h2{
     font-size:1.8rem;
     color:white;
     margin-bottom:10px;
@@ -379,21 +379,21 @@ p{
 
 }
 
-#services .service-item p{
+#workterms .service-item p{
     font-size:1.5rem;
     color:white;
     text-align:left;
 }
 
 
-#services .service-item a{
+#workterms .service-item a{
     font-size:1.9rem;
     /*background-color: red;*/
     font-family:'Comic Sans MS', 'Comic Sans', cursive;
     color: var(--red);
 }
 
-/*End Services Section*/
+/*End workterms Section*/
 
 /*Projects Section*/
 
@@ -745,16 +745,16 @@ p{
 		padding: 20px 60px;
 	}
 
-/* Services Section*/
+/* workterms Section*/
 
-  #services .service-bottom .service-item{
+  #workterms .service-bottom .service-item{
 
     flex-basis:45%;
     margin:1.5%;
   }
 
 
-/*End Services Section*/
+/*End workterms Section*/
 
 /* Project */
 #projects .project-item {
@@ -863,7 +863,7 @@ p{
 	}
 	/* End header */
 
-	#services .service-bottom .service-item {
+	#workterms .service-bottom .service-item {
         width:1000px;
         height:500px;
 		flex-basis: 22%;
