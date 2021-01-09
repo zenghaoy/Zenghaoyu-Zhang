@@ -655,14 +655,14 @@ p{
 #footer .other-item{
     display:flex;
     margin: 0;
-    width:1000px;
+    width:500px;
     height:auto;
     padding-bottom:100px;
 }
 
 #footer .col-left{
-    width: 500px;
-    text-align: right;
+    width: 300px;
+    text-align: left;
     padding:10px;
 }
 
@@ -674,16 +674,21 @@ p{
     font-weight:bold;*/
 }
 
+#footer .col-left ul{
+    color:white;
+    list-style-type: circle;
+    
+    /*font-weight:500;
+    font-weight:bold;*/
+}
 #footer .col-left p{
     text-decoration:none;
     color:white;
     font-size:2.5rem;
-    /*font-weight:500;
-    font-weight:bold;*/
 }
 
 #footer .col-right{
-    width:100px;
+    width:200px;
     text-align: left;
     padding:10px;
 }
