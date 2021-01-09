@@ -655,13 +655,13 @@ p{
 #footer .other-item{
     display:flex;
     margin: 0;
-    width:500px;
+    width:400px;
     height:auto;
-    padding-bottom:100px;
+    margin-bottom:60px;
 }
 
 #footer .col-left{
-    width: 300px;
+    width: 450px;
     text-align: left;
     padding:10px;
 }
@@ -669,39 +669,36 @@ p{
 #footer .col-left h{
     text-decoration:none;
     color:white;
-    font-size:2.5rem;
-    /*font-weight:500;
-    font-weight:bold;*/
+    font-size:2rem;
 }
 
 #footer .col-left ul{
     color:white;
     list-style-type: circle;
-    
-    /*font-weight:500;
-    font-weight:bold;*/
 }
 #footer .col-left p{
     text-decoration:none;
     color:white;
-    font-size:2.5rem;
+    font-size:2rem;
 }
 
 #footer .col-right{
     width:200px;
+    height:200px;
     text-align: left;
     padding:10px;
 }
+
+#footer .col-right a{
+    line-height:3.5rem;
+}
+
 #footer .col-right h{
     text-decoration:none;
     color:white;
-    font-size:2.5rem;
-    padding:0px;
+    font-size:2rem;
     text-align: left;
 }
-
-
-
 
 /*End Footer*/
 
@@ -836,6 +833,22 @@ p{
 }
 
 /*End contact*/
+
+/*Footer Section*/
+
+#footer .other-item{
+    display:flex;
+    margin: 0;
+    width:500px;
+    height:auto;
+    margin-bottom:60px;
+}
+
+
+/*End Footer Section*/
+
+
+
 
 }
 /* Media Query For Desktop */
