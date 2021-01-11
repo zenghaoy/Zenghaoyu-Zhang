@@ -37,7 +37,7 @@ img{
 }
 p{
     color:black;
-    font-size:1.4rem;
+    font-size:1.6rem;
     margin-top:5px;
     line-height:2.5rem;
     font-weight:300;
@@ -316,7 +316,6 @@ p{
 
 #workterms .service-top p{
     color:black;
-    font-size:1.4rem;
     margin-top:5px;
     line-height:2.5rem;
     font-weight:300px;
@@ -415,14 +414,13 @@ p{
     align-items:center;
     justify-content:center;
     margin:0px 50px 20px 50px;
-    font-size:1.9rem;
+    font-size:2.3rem;
     font-weight:500;
     
 }
 #projects .projects-header p{
     margin:0px 60px 30px 60px;
     color:black;
-    font-size:1.5rem;
 }
 
 #projects .all-projects{
@@ -456,6 +454,7 @@ p{
 }
 
 #projects .project-info h1{
+    padding-bottom:25px;
     font-size:4rem;
     font-weight:500;
 }
