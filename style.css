@@ -224,7 +224,7 @@ p{
     display:block;
     width:fit-content;
     font-size:7rem;
-    font-family:'Brush Script MT', Brush Script Std, cursive;
+    font-family:'Brush Script MT', cursive;
     position:relative;
     color:transparent;
     animation:text_reveal .5s ease forwards; 
@@ -741,117 +741,132 @@ p{
     .cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
-	}
+    }
+    
+    /*Home Section*/
+    #home h1{
+        display:block;
+        width:fit-content;
+        font-size:7rem;
+        font-family:'Brush Script MT', cursive;
+        position:relative;
+        color:transparent;
+        animation:text_reveal .5s ease forwards; 
+        animation-delay: 1s;
+    }
 
-/* workterms Section*/
-
-  #workterms .service-bottom .service-item{
-
-    flex-basis:45%;
-    margin:1.5%;
-  }
 
 
-/*End workterms Section*/
+    /*Home Section End*/
 
-/* Project */
-#projects .project-item {
-    flex-direction: row;
+
+
+    /* workterms Section*/
+
+    #workterms .service-bottom .service-item{
+
+        flex-basis:45%;
+        margin:1.5%;
+    }
+
+
+    /*End workterms Section*/
+
+    /* Project */
+    #projects .project-item {
+        flex-direction: row;
+    }
+    #projects .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    #projects .project-item {
+        height: 650px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #projects .all-projects .project-info {
+        height: 100%;
+    }
+    #projects .all-projects .project-img {
+        height: 100%;
+    }
+    /* End Project */
+
+
+    /* About */
+    #about .about {
+        flex-direction: row;
+    }
+    #about .col-left {
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after {
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid var(--red);
+    }
+    #about .col-right {
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1 {
+        text-align: left;
+    }
+    /* End About */
+
+
+    /*contact*/
+    #contact .contact{
+        flex-direction:column;
+        padding:100px 0;
+        align-items:center;
+        justify-content:center;
+        min-width:20vh;
+    }
+
+    #contact .contact-items{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        padding:20px;
+        margin:0;
+    }
+
+    #contact .contact-item{
+        margin:20px;
+        flex-direction:row;
+    }
+
+    #contact .contact-item .icon{
+        height:100px;
+        width:100px;
+    }
+
+    #contact .contact-item .icon img{
+        object-fit:contain;
+    }
+
+    /*End contact*/
+
+    /*Footer Section*/
+
+    #footer .other-item{
+        display:flex;
+        margin: 0;
+        width:500px;
+        height:auto;
+        margin-bottom:60px;
+    }
+    /*End Footer Section*/
 }
-#projects .project-item:nth-child(even) {
-    flex-direction: row-reverse;
-}
-#projects .project-item {
-    height: 650px;
-    margin: 0;
-    width: 100%;
-    border-radius: 0;
-}
-#projects .all-projects .project-info {
-    height: 100%;
-}
-#projects .all-projects .project-img {
-    height: 100%;
-}
-/* End Project */
-
-
-/* About */
-#about .about {
-    flex-direction: row;
-}
-#about .col-left {
-    width: 600px;
-    height: 400px;
-    padding-left: 60px;
-}
-#about .about .col-left .about-img::after {
-    left: -45px;
-    top: 34px;
-    height: 98%;
-    width: 98%;
-    border: 10px solid var(--red);
-}
-#about .col-right {
-    text-align: left;
-    padding: 30px;
-}
-#about .col-right h1 {
-    text-align: left;
-}
-/* End About */
-
-
-/*contact*/
-#contact .contact{
-    flex-direction:column;
-    padding:100px 0;
-    align-items:center;
-    justify-content:center;
-    min-width:20vh;
-}
-
-#contact .contact-items{
-    width:100%;
-    display:flex;
-    flex-direction: row;
-    padding:20px;
-    margin:0;
-}
-
-#contact .contact-item{
-    margin:20px;
-    flex-direction:row;
-}
-
-#contact .contact-item .icon{
-    height:100px;
-    width:100px;
-}
-
-#contact .contact-item .icon img{
-    object-fit:contain;
-}
-
-/*End contact*/
-
-/*Footer Section*/
-
-#footer .other-item{
-    display:flex;
-    margin: 0;
-    width:500px;
-    height:auto;
-    margin-bottom:60px;
-}
-
-
-/*End Footer Section*/
 
 
 
-
-}
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
     
