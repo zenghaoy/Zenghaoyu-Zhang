@@ -224,7 +224,7 @@ p{
     display:block;
     width:fit-content;
     font-size:7rem;
-    font-family:'Brush Script MT', cursive;
+    font-family:'Brush Script MT', Brush Script Std, cursive;
     position:relative;
     color:transparent;
     animation:text_reveal .5s ease forwards; 
@@ -658,7 +658,6 @@ p{
     width:400px;
     height:auto;
     margin-bottom:60px;
-    font-family: 'Montserrat',sans-serif;
 }
 
 #footer .col-left{
@@ -736,40 +735,19 @@ p{
 
 /*Media Query For Tablet*/
 
-@media only screen and (max-width:768px){
+@media only screen and (min-width:768px){
 
     .cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
     }
-    
-    /*Home Section*/
-    #home h1{
-        display:block;
-        width:fit-content;
-        font-size:7rem;
-        font-family: "Times New Roman", Times, serif;
-        position:relative;
-        color:transparent;
-        animation:text_reveal .5s ease forwards; 
-        animation-delay: 1s;
-    }
-
-
-
-    /*Home Section End*/
-
-
-
+  
     /* workterms Section*/
-
     #workterms .service-bottom .service-item{
 
         flex-basis:45%;
         margin:1.5%;
     }
-
-
     /*End workterms Section*/
 
     /* Project */
@@ -850,11 +828,9 @@ p{
     #contact .contact-item .icon img{
         object-fit:contain;
     }
-
     /*End contact*/
 
     /*Footer Section*/
-
     #footer .other-item{
         display:flex;
         margin: 0;
@@ -864,7 +840,7 @@ p{
     }
     /*End Footer Section*/
 }
-
+/* End  Media Query For Tablet */
 
 
 /* Media Query For Desktop */
