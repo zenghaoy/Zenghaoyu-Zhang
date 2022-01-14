@@ -9,7 +9,7 @@ Retrieved July 1, 2020, from https://www.youtube.com/watch?v=ZFQkb26UD1Y
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
 :root{
-    --blue:/*#1569C7*/#2554C7/*#0041C2*//*#0020C2*//*#2B547E*//*#4863A0*/;
+    --blue:#2554C7;
     --red:#DC381F;
 }
 
@@ -219,7 +219,7 @@ p{
     height:100%;
     width:100%;
     background-color: black;
-    opacity:.7;
+    opacity:.8;
     z-index:-1;
 }
 #home .home{
@@ -228,15 +228,17 @@ p{
     padding: 0 50px;
     justify-content: flex-start;
 }
+
 #home h1{
     display:block;
-    width:fit-content;
-    font-size:7rem;
-    font-family:'Brush Script MT', Brush Script Std, cursive;
+    width:280px;
+    font-size:3rem;
+    font-family: 'Montserrat',sans-serif;
     position:relative;
     color:transparent;
     animation:text_reveal .5s ease forwards; 
     animation-delay: 1s;
+    
 }
 #home h1:nth-child(1){
     animation-delay:1s;
@@ -345,14 +347,13 @@ p{
     align-items:flex-start;
     justify-content:center;
     flex-direction:column;
-    padding:30px;
     border-radius: 10px;
-    background-image: url(./Images/workingtable.jpg);
-    background-size: cover;
-    margin:10px 5%;
     position:relative;
     z-index:1;
     overflow:hidden;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
 }
 
 #workterms .service-item::after{
@@ -362,8 +363,6 @@ p{
     top:0;
     height:100%;
     width:100%;
-    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
-    opacity:.8;
     z-index:-1;
 }
 .workterms .service-bottom .icon{
@@ -381,7 +380,7 @@ p{
 #workterms .service-item h2{
     font-size:1.8rem;
     color:white;
-    margin-bottom:10px;
+    margin-bottom:50px;
     text-transform:uppercase;
 
 }
@@ -390,6 +389,7 @@ p{
     font-size:1.5rem;
     color:white;
     text-align:left;
+    margin-bottom:20px;
 }
 
 
@@ -398,6 +398,88 @@ p{
     /*background-color: red;*/
     font-family:'Comic Sans MS', 'Comic Sans', cursive;
     color: var(--red);
+}
+
+/**merge **/
+
+.card__inner1,.card__inner2,.card__inner3,.card__inner4 {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+  
+.card__inner1.is-flipped,.card__inner2.is-flipped,.card__inner3.is-flipped,.card__inner4.is-flipped {
+    transform: rotateY(180deg);
+}
+  
+  
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face:after {
+    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
+    opacity:.8;
+    z-index:-1;
+}
+
+  
+.card__face--front {
+    background-image: url(./Images/workingspace.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:.9;
+    z-index:1;
+}
+
+.card__face--front h2 {
+    color: #FFF;
+    font-size: 32px;
+}
+  
+.card__face--back {
+    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
+    transform: rotateY(180deg);
+}
+
+.card__face--back::after {
+    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
+    opacity:.8;
+    z-index:-1;
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+  
+.card__body {
+    padding: 30px;
+}
+  
+.card__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+  
+.card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
 }
 
 /*End workterms Section*/
@@ -554,7 +636,7 @@ p{
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid var(--red);
+	border: 7px solid var(--blue);
 	z-index: -1;
 }
 
@@ -615,9 +697,8 @@ p{
 
 /*Footer*/
 #footer{
-    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
-/*
-    background-color:black;*/
+    background-color:black;
+    opacity: 0.9;
 }
  
 #footer .footer{
@@ -745,12 +826,23 @@ p{
 
 @media only screen and (min-width:768px){
 
+    /* Home Section  */
+
+    #home h1{
+        width:350px;
+        font-size:3rem;
+    }
+
+    /* End Home Section*/
+
+
     .cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
     }
   
-    /* workterms Section*/
+    /* Workterms Section*/
+    
     #workterms .service-bottom .service-item{
 
         flex-basis:45%;
@@ -794,7 +886,7 @@ p{
         top: 34px;
         height: 98%;
         width: 98%;
-        border: 10px solid var(--red);
+        border: 10px solid var(--blue);
     }
     #about .col-right {
         text-align: left;
@@ -854,6 +946,15 @@ p{
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
     
+    /* Home Section  */
+
+    #home h1{
+        width:550px;/*fit-content*/
+        font-size:4rem;
+    }
+
+    /* End Home Section*/
+
 	/* header */
 	#header .hamburger {
 		display: none;
@@ -885,3 +986,4 @@ p{
 
 }
 /* End  Media Query For Desktop */
+
