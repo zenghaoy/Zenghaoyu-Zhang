@@ -338,6 +338,9 @@ p{
     justify-content:center;
     flex-wrap:wrap;
     margin-top:50px;
+    position:relative;
+    width:100%;
+    height:100%;
 }
 
 #workterms .service-item{
@@ -356,15 +359,6 @@ p{
     perspective: 1000px;
 }
 
-#workterms .service-item::after{
-    content:'';
-    position:absolute;
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    z-index:-1;
-}
 .workterms .service-bottom .icon{
     height:50px;
     width:50px;
@@ -395,20 +389,16 @@ p{
 
 #workterms .service-item a{
     font-size:1.9rem;
-    /*background-color: red;*/
     font-family:'Comic Sans MS', 'Comic Sans', cursive;
     color: var(--red);
 }
 
-/**merge **/
-
 .card__inner1,.card__inner2,.card__inner3,.card__inner4 {
     width: 100%;
-    height: 100%;
+    height: 440px;
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
-    position: relative;
 }
   
 .card__inner1.is-flipped,.card__inner2.is-flipped,.card__inner3.is-flipped,.card__inner4.is-flipped {
@@ -426,15 +416,9 @@ p{
     border-radius: 16px;
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
-
-.card__face:after {
-    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
-    opacity:.8;
-    z-index:-1;
-}
-
   
 .card__face--front {
+    height:440px;
     background-image: url(./Images/workingspace.jpg);
     background-size: cover;
     display: flex;
@@ -450,14 +434,9 @@ p{
 }
   
 .card__face--back {
+    height:440px;
     background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
     transform: rotateY(180deg);
-}
-
-.card__face--back::after {
-    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
-    opacity:.8;
-    z-index:-1;
 }
 
 .card__content {
@@ -844,10 +823,10 @@ p{
     /* Workterms Section*/
     
     #workterms .service-bottom .service-item{
-
         flex-basis:45%;
         margin:1.5%;
     }
+
     /*End workterms Section*/
 
     /* Project */
@@ -983,7 +962,7 @@ p{
 		flex-basis: 22%;
 		margin: 1.5%;
     }
-
+    
 }
 /* End  Media Query For Desktop */
 
